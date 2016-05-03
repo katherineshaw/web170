@@ -1,0 +1,252 @@
+/* GLOBAL STYLES */
+
+/* Rules are made up of a selector, declaration block and declarations */
+/* Top Right Bottom Left = TRBL */
+
+html {
+	background-image:url("../images/picnictable.jpg");
+	background-repeat: repeat-y;
+	background-color:#B80000;
+}
+
+.catchphrase {
+    font-family: 'Indie Flower', cursive;
+    padding: 50px 20px 0px;
+    display: inline-block;
+    
+}
+
+h2, h3 {
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+}
+
+h4 {
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+	background-color:#fff;
+	width:75%;
+	margin:auto;
+	border-radius: 10px;
+    opacity: 0.9;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social {
+    display: inline;
+}
+
+
+.logo {
+    float:left;
+    margin-top: 0px;
+    position: relative;
+    padding: 12px;
+}
+
+.downtown {
+    float: right;
+    padding:0 12px 0 12px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.belltown {
+    float: right;
+    font-family: 'Indie Flower', cursive;
+}
+
+.letter {
+    font-family: 'Indie Flower', cursive;
+    font-size: 115%;
+}
+
+/* GATEWAY PAGE */ 
+
+.figure {
+    margin: 30px;
+    position: relative;
+}
+figure {
+    float: left;
+    margin: 0;
+    width: 33%;
+    padding-right: 20px;
+    text-align:center;
+}
+figure img {
+    width: 100%;
+    padding: 0 50% 0 50%;
+}
+
+/* TEMPLATE PAGE */
+
+.kimmie {
+    float:right;
+    height: 60%;
+    width: 60%;
+}
+
+/* MENU PAGE */
+.menu {
+    text-align: center;
+    height: 60%;
+    width: 60%;
+}
+
+/* MAPS STYLING
+.downtown b {
+    float: right;
+} comment out */
+
+.phone {
+    float:right;
+    font-size: 150%;
+    padding: 5%;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* SOCIAL MEDIA ICON STYLES */
+
+div {
+    background: #fff;
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+/* NAV STYLES */
+
+/* START Nav Styles */
+
+  /* nav */
+  
+	.main {
+		position: relative;
+        background-color: #000;
+		margin: 70px 0 0 0;
+	}
+	.main ul {
+		padding: 0;
+        text-align: center;
+	}
+	.main li {
+		margin: 0;
+		padding: 0 5%;
+		list-style: none;
+		display: inline-block;
+	}
+	.main a {
+		padding: 0;
+		text-decoration: none;
+		color:#fff;
+		line-height: 100%;
+        font-family: 'Indie Flower', cursive;
+        font-size: 150%;
+	}
+	.main a:hover {
+		color: #fff;
+	}
+	nav.main ul li.current a {
+		background: #800000;
+		color: #fff;
+		border-radius: 5px;
+	}
+	
+   /* right nav */
+	.main.right ul {
+		text-align: right;
+	}
+
+    /* center nav */
+	.main.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	/* END Nav Styles */
+	
+	
+	/* BEGIN RESPONSIVE STYLES */
+
+@media screen and (max-width: 600px) {
+	
+	section, div, body, object, aside {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+
+
+	.main {
+		position: relative;
+		min-height: 40px;
+	}	
+	
+	.main ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(../images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	
+	.main li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	
+	.main .current {
+		display: block; /* show only current <li> item */
+	}
+	
+	.main a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	
+	.main .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.main ul:hover {
+		background-image: none;
+	}
+	
+	.main ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	
+	.main ul:hover .current {
+		background: url(../images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.main.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.main.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
