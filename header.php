@@ -4,11 +4,16 @@
     <meta charset="utf-8" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width" />
-    <link href="css/globalbiscuit.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all"/>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+        
+    <!-- WP Head -->
+    <?php wp_head(); ?>
+    <!-- WP Head END -->
+        
     </head>
     
-    <body>
+    <body <?php body_class(); ?>>
     
     <header>
         
@@ -23,7 +28,7 @@
     <!-- Social Media Icons End -->
         
     <h2 class="catchphrase">"Trailer Park to Table"</h2>
-        <a href="http://katherineshawdesign.com/web200/protosite/"><img class="logo" src="images/biscuitbitchlogo.jpg" alt="Biscuit Bitch Logo" height="15%" width="15%"></a>
+        <a href="http://katherineshawdesign.com/web200/protosite/"><img class="logo" src="<?php bloginfo('template_directory'); ?>images/biscuitbitchlogo.jpg" alt="Biscuit Bitch Logo" height="15%" width="15%"></a>
         
     <aside class="downtown">
     <p>
@@ -55,7 +60,7 @@
 
     </header>    
         
-    <!-- Navigation Starts -->
+    <!-- hand coded Navigation Starts 
 
     <nav class="main center">
       <ul>
@@ -67,4 +72,9 @@
       </ul>
     </nav>
         
-    <!-- Navigation Ends -->
+     hand coded Navigation Ends -->
+        
+    <!-- Navigation wp_nav starts -->
+    <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => 'div', 'container_id' => 'main center', 'items_wrap' => '<ul id="main center" class = nav</ul>',)); ?>
+        
+    <!-- Navigation wp_nav ends -->
