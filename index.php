@@ -1,7 +1,14 @@
 <?php get_header(); ?>
-
+<title><?php bloginfo('description'); ?> // <?php bloginfo('name'); ?></title>
 <!-- Main Page Content -->        
 	 <img src="images/storefront.jpg" alt="Biscuit Bitch Downtown Storefront" height="80%" width="90%">
+
+<div class="first_Index">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
+<h2><a href="<?php the_permalink(); // link to the page or posting ?>"><?php the_title(); // get the page or posting title ?></a></h2>
+<?php the_content(''); // get page or posting written content ?>
+<?php endwhile; endif; // end the loop ?>
+</div>
         
     <h3>Check out the Process, Bitches!</h3>
         <div class="figure">
