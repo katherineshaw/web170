@@ -9,7 +9,7 @@
 <?php the_post_thumbnail('large'); ?>
 <?php the_content(''); // get page content ?>
 <?php endwhile; endif; // end loop ?>
-<p>single.php</p>
+<small>single.php</small>
 </div>
     
 
