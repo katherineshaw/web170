@@ -3,7 +3,7 @@
 
 <!-- Main Page Content -->        
 
-<div class="first_Index">
+<div class="main-content">
 <?php if (have_posts() ) : while (have_posts() ) : the_post();// start loop ?> 
 
 <h2><a href="<?php the_permalink(); // link to page posting ?>"><?php the_title();// get page title ?></a></h2>
