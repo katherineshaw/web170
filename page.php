@@ -9,7 +9,7 @@
 <h2><a href="<?php the_permalink(); // link to page posting ?>"><?php the_title();// get page title ?></a></h2>
 <?php the_content(''); // get page content ?>
 <?php endwhile; endif; // end loop ?>
-<p>page.php</p>
+<small>page.php</small>
 </div>
 
 <!-- A6 SIDEBAR -->
