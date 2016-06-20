@@ -2,8 +2,9 @@
 <!-- A6 -->
 <div id="sidebar">
 <?php if (is_page()) : ?>
+    
 <h3 class="sub-nav"> 
-    <?php echo get_the_title($post->post_parent); //gateway page title ?>
+<?php echo get_the_title($post->post_parent); //gateway page title ?>
 </h3>  
     
 <ul class="sub-nav-items"> 
@@ -26,3 +27,11 @@
 </div>
 
 <!-- SUB-NAV over -->
+
+<!-- A10 Quote -->
+<div id="quote"> 
+ <?php  
+ 	if (get_post_meta($post->ID, 'quote', true)){ //check for quote field ?> 
+ 		<blockquote><?php echo get_post_meta($post->ID, 'quote', true) ?></blockquote> 
+<?php } ?>
+</div>
