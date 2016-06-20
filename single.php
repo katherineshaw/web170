@@ -11,7 +11,6 @@
 <?php endwhile; endif; // end loop ?>
 <small>single.php</small>
 </div>
-    
 
 <!-- A6 SIDEBAR -->
 <?php get_sidebar(); ?>
